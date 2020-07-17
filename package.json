@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack"
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/FedericoManzano/bodystyle-v3.5.0-fuente"
   },
@@ -39,6 +39,7 @@
     "babel-loader": "^8.1.0",
     "braces": "^3.0.2",
     "css-loader": "^3.6.0",
+    "lodash": "^4.17.19",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
