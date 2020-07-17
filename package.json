@@ -6,6 +6,10 @@
   "scripts": {
     "build": "webpack"
   },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoManzano/bodystyle-v3.5.0-fuente"
+  },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
     "src/{modulos}/**/*.{js}",

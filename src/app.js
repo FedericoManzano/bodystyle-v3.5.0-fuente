@@ -7,7 +7,6 @@
  * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.5.0-fuente)
  */
 
-import "../dist/css/bodystyle.css"
 import Modal from "./modulos/Modal"
 import Waves from  "./modulos/Waves"
 import DropDown from "./modulos/Dropdown"

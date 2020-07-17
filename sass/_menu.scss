@@ -66,7 +66,9 @@
     background-color: rgb(26, 88, 223);
     display: flex;
     align-items: center;
-    
+    a {
+        cursor: pointer !important;
+    }
     @media (max-width: 1024px) {
         & {
             display: flex;
@@ -205,7 +207,7 @@
                 padding: 10px;
                 color: black;
                 font-size: 18px;
-
+                cursor: pointer !important;
                 &.activo {
                     color: orangered;
                 }
@@ -237,7 +239,7 @@
                 width: 100%;
                 padding: 10px;
                 font-size: 18px;
-
+                cursor: pointer !important;
                 &.activo {
                     color: orangered;
                 }
@@ -302,6 +304,7 @@
                 width: 100%;
                 color: rgb(44, 44, 44);
                 font-size: 18px;
+                cursor: pointer !important;
                 &:hover {
                     color: black;
                 }

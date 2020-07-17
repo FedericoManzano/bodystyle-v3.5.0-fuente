@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*!
- * BodyStyle v3.1.0
+ * BodyStyle v3.5.0
  * Copyright Federico Manzano
  * Licencia MIT
- * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.1.0-fuente)
+ * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.5.0-fuente)
  */
 @import url("https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/css/estilos-dynamics.min.css");
 @import url("https://ghcdn.rawgit.org/FedericoManzano/bodystyle-iconos-v1.0.0/master/iconos/bs-iconos.min.css");
@@ -24092,6 +24092,9 @@ input.btn-cubrir-lg-o {
   display: flex;
   align-items: center;
 }
+.nav-body a {
+  cursor: pointer !important;
+}
 @media (max-width: 1024px) {
   .nav-body {
     display: flex;
@@ -24215,6 +24218,7 @@ input.btn-cubrir-lg-o {
   padding: 10px;
   color: black;
   font-size: 18px;
+  cursor: pointer !important;
 }
 .nav-colapso .lista-colapso li a.activo {
   color: orangered;
@@ -24243,6 +24247,7 @@ input.btn-cubrir-lg-o {
   width: 100%;
   padding: 10px;
   font-size: 18px;
+  cursor: pointer !important;
 }
 .nav-sidebar ul li a.activo {
   color: orangered;
@@ -24299,6 +24304,7 @@ input.btn-cubrir-lg-o {
   width: 100%;
   color: #2c2c2c;
   font-size: 18px;
+  cursor: pointer !important;
 }
 .nav-sidebar-desplegable ul li a:hover {
   color: black;
@@ -24543,6 +24549,12 @@ input.btn-cubrir-lg-o {
 .lista-contenedor .lista-pie {
   border-radius: 0 0 5px 5px;
   border-top: none !important;
+}
+.lista-contenedor * {
+  list-style: none;
+}
+.lista-contenedor a {
+  cursor: pointer !important;
 }
 .lista-contenedor .lista-item {
   padding: 7px 10px;

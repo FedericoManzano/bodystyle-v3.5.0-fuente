@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../dist/css/bodystyle.css">
+
+
+    <style>
+        .elemento {
+            position: absolute;
+            padding: 5px;
+            font-size: 13px;
+            background-color: rgba(0, 0, 0, 0.836);
+            border-radius: 3px;
+            color: white;
+            transform: translate(0);
+            transition: transform 0.3s;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="contenedor">
+        <div id="l-acordeon2">
+            <div class="lista-contenedor l-colapso mar-2" style="width: 50%">
+                <div class="lista-cabecera">
+                    Cabecera
+                </div>
+                <div class="lista-item desactivado e-borde-izq-gris-4">
+                    <a>Elemento1</a>
+                </div>
+                <div class="desplegable " id="4">
+                    <p class="fz-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi deserunt aperiam maiores nobis quasi repellat debitis sapiente accusamus ut perferendis numquam voluptatibus, harum reprehenderit! Asperiores impedit rem modi debitis excepturi.</p>
+                </div>
+                <div class="lista-item e-borde-izq-rojo-4" data-target="#5">
+                    <a >Elemento2</a>
+                </div>
+                <div class="desplegable" id="5">
+                <ul>
+                    <li><a>Servicios</a></li>
+                    <li><a>Porfolio</a></li>
+                    <li><a>Actividades</a></li>
+                </ul>
+                </div>
+                <div class="lista-item e-borde-izq-rojo-4" data-target="#6">
+                    <a>Elemento3</a>
+                </div>
+                <div class="desplegable" id="6">
+                    <p class="fz-14">Esto es texto desplegable número 3</p>
+                </div>
+                <div class="lista-pie">
+                    Pie de la lista
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    
+
+    <script src="../dist/js/bodystyle.js"></script>
+    <script>
+        BS.Colecciones().iniciar({contexto: "#l-acordeon2", colorFondo: "fd-gris-az", colorTexto: "c-blanco", colorFlechas: "#fff"})
+        </script>
+</body>
+
+
+</html>

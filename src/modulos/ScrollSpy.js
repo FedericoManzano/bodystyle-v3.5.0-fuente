@@ -10,7 +10,6 @@ import ERR from "./Errores"
 
 
     const destroy = () => {
-        console.log("adsdsadas")
         $(".lista-scroll ul li").off()
     }
 

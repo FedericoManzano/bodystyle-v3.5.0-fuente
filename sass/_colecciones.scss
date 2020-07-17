@@ -34,7 +34,14 @@
     }
 
     
+    * {
+        list-style: none;
+    }
 
+    a {
+        cursor:  pointer !important;
+    }
+   
    
     .lista-item {
         padding: 7px 10px;
