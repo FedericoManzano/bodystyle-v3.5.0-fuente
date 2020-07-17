@@ -1,10 +1,10 @@
 
 
 /*!
- * BodyStyle v3.1.0
+ * BodyStyle v3.5.0
  * Copyright Federico Manzano
  * Licencia MIT
- * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.1.0-fuente)
+ * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.5.0-fuente)
  */
 
 import "../dist/css/bodystyle.css"
@@ -38,6 +38,8 @@ import Css from "./modulos/CodigoCss"
 import Java from "./modulos/CodigoJava"
 import C from "./modulos/CodigoC"
 import ComentarioDinamico from "./modulos/ComentarioDinamico"
+import Personalizado from "./modulos/Personalizado"
+
 
 (function(){
     Waves.iniciar()
@@ -84,16 +86,16 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
     }
 
 
-    var ContenedoresInit = () => Contenedores.iniciar()
+    const ContenedoresInit = () => Contenedores.iniciar()
 
-    var Colecciones = () => {
+    const Colecciones = () => {
         return new Coleccion
     } 
 
-    var ParalaxInit = () => Paralax.iniciar()
+    const ParalaxInit = () => Paralax.iniciar()
 
 
-    var BotonFlotanteInit = (config) => {
+    const BotonFlotanteInit = (config) => {
         BotonFlotante.iniciar(config)
     }
 
@@ -101,44 +103,44 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
         BotonFlotante.destroy()
     }
 
-    var ScrollSpyInit = (config) => ScrollSpy.iniciar(config)
-    var ScrollSpyDestroy = () => ScrollSpy.destroy()
+    const ScrollSpyInit = (config) => ScrollSpy.iniciar(config)
+    const ScrollSpyDestroy = () => ScrollSpy.destroy()
 
 
-    var ModalInit = function(conf){
+    const ModalInit = function(conf){
         Modal.iniciar(conf)
     }
 
-    var ModalDestroy = function(){
+    const ModalDestroy = function(){
         Modal.destroy()
     }
 
-    var ImagenesInit = ()=> {
+    const ImagenesInit = ()=> {
         Imagenes.iniciar()
     }
 
-    var ImagenesDestroy = ()=> {
+    const ImagenesDestroy = ()=> {
         Imagenes.destroy()
     }
 
 
-    var BotonInicioInit = () => {
+    const BotonInicioInit = () => {
         BotonInicio.iniciar()
     }
 
-    var TabInit = () => {
+    const TabInit = () => {
         return new Tab
     }
 
-    var ColeccionFlot = () => {
+    const ColeccionFlot = () => {
         return new ColeccionFlotante
     }
 
-    var EfectoHoverBordeInit = () => {
+    const EfectoHoverBordeInit = () => {
         return new EfectoHoverBorde
     }
 
-    var AutoInit = ()=> {
+    const AutoInit = ()=> {
         ModalInit()
         DropDownInit({})
         ScrollSpyInit({})
@@ -151,15 +153,23 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
     }
 
 
-    var SliderInit = (config) => {
+    const PersonalizadoInit = (config) => {
+        Personalizado.iniciar(config)
+    }
+
+    const PersonalizadoDestroy = () => {
+        Personalizado.destroy()
+    }
+
+    const SliderInit = (config) => {
         Slider.iniciar(config)
     }
 
-    var SliderDestroy= () => {
+    const SliderDestroy= () => {
         Slider.destroy()
     }
 
-    var Deshabilitar = () => {
+    const Deshabilitar = () => {
         desactivar(".deshabilitado")
         desactivar(".input-cargando")
         desactivar(".input-cargando input")
@@ -171,23 +181,23 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
         desactivar(".b-blanco-cargando")
     }
     
-    var DropDownInit = (config) => {
+    const DropDownInit = (config) => {
         DropDown.iniciar(config)
     }
 
-    var DropDownDestroy = (elemento) => {
+    const DropDownDestroy = (elemento) => {
         DropDown.destroy(elemento)
     }
 
-    var ToolTipsInit = () => {
+    const ToolTipsInit = () => {
         ToolTips.iniciar()
     }
 
-    var ToolTipsDestroy = () => {
+    const ToolTipsDestroy = () => {
         ToolTips.destroy()
     }
 
-    var SelectInit = () => {
+    const SelectInit = () => {
         return new Select
     }
 
@@ -197,7 +207,7 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
 
 
 
-   var BS = {
+    const BS = {
         AutoInit: () => AutoInit(),
 
         // Modales
@@ -210,7 +220,7 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
         DropDownDestroy: (elemento) => DropDownDestroy(elemento),
 
         // Toast
-        Toast: (html, clases, tiempo) => Toast.ejecutar(html, clases, tiempo),
+        Toast: (config) => Toast.ejecutar(config),
 
         // ScrollSpy
         ScrollSpyInit: (config) => ScrollSpyInit(config),
@@ -267,6 +277,12 @@ import ComentarioDinamico from "./modulos/ComentarioDinamico"
 
         // Template
         TemplateDestroy: () => TemplateDestroy(),
+
+
+        // Personalizado
+        PersonalizadoInit: (config) => PersonalizadoInit(config),
+        PersonalizadoDestroy: () => PersonalizadoDestroy(),
+
 
         // Codigo 
 

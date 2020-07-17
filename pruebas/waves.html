@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/bodystyle.min.css">
+    <style>
+        .rojo {
+            background-color: red !important;
+        }
+
+        .borde {
+            border-radius: 70px !important;
+        }
+    </style>
+    <link  rel="stylesheet"  href="../dist/css/bodystyle.css">
    
+    
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +23,7 @@
   
   
     <!-- Tips Arriba -->
-    <a class="btn fd-azul tips-ele" data-posicion="arriba" data-tips="Soy un Tips !!!">Arriba</a>
+    <a class="btn fd-azul tips-ele" onclick="saludar()" data-posicion="arriba" data-tips="Soy un Tips !!!">Arriba</a>
 
     <!-- Tips Abajo -->
     <a class="btn fd-azul tips-ele" data-posicion="abajo" data-tips="Soy un Tips !!!">Abajo</a>
@@ -35,6 +45,17 @@
     <script>
         BS.DropDownInit()
         BS.ToolTipsInit()
+
+
+        function saludar () {
+        let  conf = {
+            html: 'Este es un Toast de Dynamics-tips V1.5.0',
+            clases: ["rojo", "borde"],
+            tiempo: 10000,
+            cerrar: true
+        }
+        BS.Toast(conf)
+    }
     </script>
     
 </body>

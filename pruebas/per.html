@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../dist/css/bodystyle.css">
+
+
+    <style>
+        .elemento {
+            position: absolute;
+            padding: 5px;
+            font-size: 13px;
+            background-color: rgba(0, 0, 0, 0.836);
+            border-radius: 3px;
+            color: white;
+            transform: translate(0);
+            transition: transform 0.3s;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <div class="contenedor">
+        <a class="btn fd-azul trigger" data-pos="derecha" data-info="Esto es un elemento personalizado">
+            <span class="bs-tash">&nbsp;</span>Boton</a>
+    </div>
+    <span class="bs-zip fz-200 c-rojo">&nbsp;</span>
+    <script src="../dist/js/bodystyle.js"></script>
+    <script>BS.PersonalizadoInit({ori: "trigger", ele: "elemento"})</script>
+</body>
+
+
+</html>

@@ -5,7 +5,8 @@
  * Licencia MIT
  * Repositorio (https://github.com/FedericoManzano/bodystyle-v3.1.0-fuente)
  */
-@import url("https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.1.0-fuente/master/dist/css/estilos-dynamics.min.css");
+@import url("https://ghcdn.rawgit.org/FedericoManzano/dynamics-tips-v1.8.0-fuente/master/dist/css/estilos-dynamics.min.css");
+@import url("https://ghcdn.rawgit.org/FedericoManzano/bodystyle-iconos-v1.0.0/master/iconos/bs-iconos.min.css");
 * {
   padding: 0;
   margin: 0;
@@ -22961,32 +22962,6 @@ table tbody tr td {
   max-width: 100% !important;
 }
 
-.toast {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  padding: 15px;
-  font-size: 17px;
-  background-color: #282e42;
-  text-align: center;
-  right: 3%;
-  top: 100px;
-  color: white;
-  animation: subir 1s 0s 1 linear;
-  border-radius: 3px;
-  user-select: none;
-  box-shadow: 0 0.5px 3px 1px rgba(0, 0, 0, 0.534);
-}
-
-@keyframes subir {
-  from {
-    top: 300px;
-  }
-  to {
-    top: 100px;
-  }
-}
 .btn-flotante {
   width: 70px;
   height: 300px;
